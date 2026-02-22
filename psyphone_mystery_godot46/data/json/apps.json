@@ -1,0 +1,51 @@
+[
+	{
+		"id": "messages",
+		"name": "Messages",
+		"default_unlocked": true,
+		"scene": "res://scenes/apps/messages/MessagesApp.tscn",
+		"icon": "res://assets/ui/icons/messages.png"
+	},
+	{
+		"id": "photos",
+		"name": "Photos",
+		"default_unlocked": false,
+		"scene": "res://scenes/apps/photos/PhotosApp.tscn",
+		"icon": "res://assets/ui/icons/photos.png"
+	},
+	{
+		"id": "notes",
+		"name": "Notes",
+		"default_unlocked": false,
+		"scene": "res://scenes/apps/notes/NotesApp.tscn",
+		"icon": "res://assets/ui/icons/notes.png"
+	},
+	{
+		"id": "browser",
+		"name": "Browser",
+		"default_unlocked": false,
+		"scene": "res://scenes/apps/browser/BrowserApp.tscn",
+		"icon": "res://assets/ui/icons/browser.png"
+	},
+	{
+		"id": "email",
+		"name": "Email",
+		"default_unlocked": false,
+		"scene": "res://scenes/apps/email/EmailApp.tscn",
+		"icon": "res://assets/ui/icons/email.png"
+	},
+	{
+		"id": "contacts",
+		"name": "Contacts",
+		"default_unlocked": false,
+		"scene": "res://scenes/apps/contacts/ContactsApp.tscn",
+		"icon": "res://assets/ui/icons/contacts.png"
+	},
+	{
+		"id": "system_hidden",
+		"name": "System",
+		"default_unlocked": false,
+		"scene": "res://scenes/apps/system_hidden/SystemHiddenApp.tscn",
+		"icon": "res://assets/ui/icons/system_hidden.png"
+	}
+]

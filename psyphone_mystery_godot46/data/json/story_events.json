@@ -1,0 +1,38 @@
+[
+	{
+		"id": "event_unlock_photos",
+		"on": "action",
+		"condition": {
+			"type": "action_occurred",
+			"action_id": "messages_thread_read_done",
+			"thread_id": "thread_001"
+		},
+		"actions": [
+			{"type": "unlock_app", "app_id": "photos", "toast": "Photos unlocked."},
+			{"type": "badge_increment", "app_id": "photos", "delta": 1}
+		]
+	},
+	{
+		"id": "event_after_burn_mark_schedule_msg",
+		"on": "action",
+		"condition": {
+			"type": "action_occurred",
+			"action_id": "photo_inspected_burn_mark"
+		},
+		"actions": [
+			{"type": "set_flag", "flag_id": "found_burn_mark", "value": true},
+			{"type": "schedule_action", "minutes_from_now": 5, "action_id": "scheduled_new_message"}
+		]
+	},
+	{
+		"id": "event_scheduled_new_message",
+		"on": "action",
+		"condition": {
+			"type": "action_occurred",
+			"action_id": "scheduled_new_message"
+		},
+		"actions": [
+			{"type": "send_message_notification", "text": "New message."}
+		]
+	}
+]
